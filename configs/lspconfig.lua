@@ -5,22 +5,16 @@ local capabilities = configs.capabilities
 
 local lspconfig = require("lspconfig")
 local util = require("lspconfig/util")
--- local servers = { "pyright"}
 
--- for _, lsp in ipairs(servers) do
+-- local default = {"docker_compose_language_service", "dockerls"}
+--
+-- for _, lsp in ipairs(default) do
 --   lspconfig[lsp].setup {
 --     on_attach = on_attach,
 --     capabilities = capabilities,
 --   }
 -- end
 
--- Without the loop, you would have to manually set up each LSP 
--- 
--- lspconfig.html.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
---
 lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
