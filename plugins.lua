@@ -49,7 +49,7 @@ local plugins = {
         "eslint-lsp",
         "prettierd",
         "tailwindcss-language-server",
-        "typescript-language-server"
+        "typescript-language-server",
       },
     },
   },
@@ -59,6 +59,10 @@ local plugins = {
         require "plugins.configs.lspconfig"
         require "custom.configs.lspconfig"
     end,
+  },
+  {
+    "thePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
   },
 }
 
