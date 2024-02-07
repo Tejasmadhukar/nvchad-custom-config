@@ -3,7 +3,9 @@ local M = {}
 M.general = {
   n = {
     ["<C-d>"] = {"<C-d>zz", "scrolls half a page down"},
-    ["<C-u"] = {"<C-u>zz", "scrolls half a page up"}
+    ["<C-u"] = {"<C-u>zz", "scrolls half a page up"},
+    ["n"] = {"nzzzv", "next search element"},
+    ["N"] = {"Nzzzv", "previous search element"}
   }
 }
 
